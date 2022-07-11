@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+td, th{
+    border: black solid 1px;
+    padding: 7px;
+}
+input{
+    margin: 0 10px;
+}
