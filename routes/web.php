@@ -40,12 +40,15 @@ Route::get('/Teacher', function () {
     return view('welcomeTeacher');
 })->name('Teacher');
 
- Route::resource('/ScheduleTeacher','ScheduleController')->names('ScheduleTeacher');
+Route::resource('/ScheduleTeacher','ScheduleController')->names('ScheduleTeacher');
 
 Route::get('/Room', function () {
     return view('welcomeRoom');
 })->name('room');
 
+Route::get('/Marksheet', 'MarksheetController@index');
+
+Route::get('/Search2', 'Search2Controller@index');
 
 Route::fallback(function () {
     return 'Резервный маршрут';
